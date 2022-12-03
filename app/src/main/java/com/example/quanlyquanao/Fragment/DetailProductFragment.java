@@ -42,7 +42,6 @@ public class DetailProductFragment extends Fragment {
     private Button btnDetailProductBuy;
     private ImageView imgDetailProductPhoto;
 
-    // endregion Variable
 
     public DetailProductFragment(Product product,List<Product> listProduct) {
         detailProduct = product;
@@ -60,8 +59,6 @@ public class DetailProductFragment extends Fragment {
 
         return mView;
     }
-
-    // region Private menthod
 
     // Khởi tạo các item
     private void initItem(){
