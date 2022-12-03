@@ -4,27 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="6dp"
-    android:layout_margin="2dp">
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relativelayout_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
 
-        <ImageView
-            android:id="@+id/img_photo_product"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/aothun"
-            android:layout_centerInParent="true"
-            android:layout_alignParentTop="true">
-        </ImageView>
+            <ImageView
+                android:id="@+id/img_photo_product"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/aothun"></ImageView>
+        </RelativeLayout>
+
+
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/img_photo_product">
+            android:layout_below="@+id/relativelayout_img">
 
             <TextView
                 android:id="@+id/tv_product_name"
@@ -33,9 +40,8 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center_horizontal"
                 android:text="Áo polo"
-                android:textSize="10sp"
-                android:textColor="@color/text_color">
-            </TextView>
+                android:textColor="@color/text_color"
+                android:textSize="10sp"></TextView>
 
             <TextView
                 android:id="@+id/tv_product_price"

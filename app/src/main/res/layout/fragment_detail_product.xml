@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragment.DetailProductFragment">
+    tools:context=".Fragment.DetailProductFragment"
+    android:background = "#8BD5BE">
 
    <ScrollView
        android:layout_width="match_parent"
@@ -13,84 +14,88 @@
       <RelativeLayout
           android:layout_width="match_parent"
           android:layout_height="match_parent"
-          android:layout_margin="10dp">
+          android:layout_margin="0dp">
 
-         <ImageView
-             android:id="@+id/img_detail_product_photo"
-             android:layout_width="match_parent"
-             android:layout_height="200dp"
-             android:layout_marginBottom="20dp"
-             android:src="@drawable/aothun">
-         </ImageView>
-
-         <TextView
-             android:id="@+id/tv_detail_product_name"
+         <RelativeLayout
+             android:background = "#8BD5BE"
+             android:id = "@+id/relativelayout_img_productdetail"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
-             android:layout_below="@+id/img_detail_product_photo"
-             android:text="Iphone 12"
-             android:textSize="30sp"
-             android:textColor="@color/text_color">
-         </TextView>
+             >
 
-         <TextView
-             android:id="@+id/tv_detail_product_2"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="10dp"
-             android:text="Giá :"
-             android:textSize="20sp"
-             android:textColor="@color/red"
-             android:layout_below="@+id/tv_detail_product_name">
-         </TextView>
+            <ImageView
+                android:id="@+id/img_detail_product_photo"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/aothun"></ImageView>
+         </RelativeLayout>
 
-         <TextView
-             android:id="@+id/tv_detail_product_price"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="10dp"
-             android:layout_below="@+id/tv_detail_product_name"
-             android:layout_toRightOf="@+id/tv_detail_product_2"
-             android:layout_marginLeft="10dp"
-             android:text="20.900.000 Đ"
-             android:textSize="20sp"
-             android:textColor="@color/red">
-         </TextView>
+         <RelativeLayout
+             android:layout_below="@+id/relativelayout_img_productdetail"
+             android:layout_width = "match_parent"
+             android:layout_height = "500dp"
+             android:background = "@drawable/rounded_edge"
+             android:padding = "20dp">
+            <TextView
+                android:id="@+id/tv_detail_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ao thun"
+                android:textColor="@color/text_color"
+                android:textSize="30sp"
+                android:fontFamily = "sans-serif-condensed-medium"></TextView>
 
-         <Button
-             android:id="@+id/btn_detail_product_buy"
-             android:layout_width="150dp"
-             android:layout_height="50dp"
-             android:layout_marginTop="10dp"
-             android:layout_marginBottom="20dp"
-             android:layout_below="@id/tv_detail_product_2"
-             android:text="Mua Ngay"
-             android:textSize="20dp"
-             android:textColor="@color/black"
-             android:background="@drawable/custom_button_red"
-             android:backgroundTint="@null"
-             app:backgroundTint="@null">
-         </Button>
+            <TextView
+                android:id="@+id/tv_detail_product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_detail_product_name"
+                android:layout_marginLeft="0dp"
+                android:text="20.900.000 Đ"
+                android:textSize="20sp"
+                android:textColor="@color/red">
+            </TextView>
 
-         <TextView
-             android:id="@+id/tv_detail_product_3"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:text="Mô Tả Chi Tiết Sản Phẩm"
-             android:layout_below="@+id/btn_detail_product_buy"
-             android:textSize="30dp"
-             android:textColor="@color/red">
-         </TextView>
+            <Button
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/btn_detail_product_buy"
+                android:layout_width="400dp"
+                android:layout_height= "50dp"
+                android:layout_below="@id/tv_detail_product_description"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/button_corner"
+                android:backgroundTint="@null"
+                android:text="+ thêm vào giỏ hàng"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:backgroundTint="@null"></Button>
 
-         <TextView
-             android:id="@+id/tv_detail_product_description"
-             android:layout_below="@+id/tv_detail_product_3"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginBottom="30dp"
-             android:text="Mới đây, Apple đã trình diện đến người dùng mẫu điện thoại iPhone 12 128 GB với sự tuyên bố về một kỷ nguyên mới của iPhone: iPhone 5G siêu nhanh, nâng cấp về màn hình và hiệu năng hứa hẹn đây sẽ là smartphone cao cấp đáng chú ý nhất trong năm nay."
-             android:textSize="20dp">
-         </TextView>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tv_detail_product_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop = "10dp"
+                android:text="mô tả"
+                android:layout_below="@+id/tv_detail_product_price"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:fontFamily = "sans-serif-light"
+                android:id="@+id/tv_detail_product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_detail_product_3"
+                android:layout_marginTop = "5dp"
+                android:layout_marginBottom="30dp"
+                android:text="Quần áo phục vụ nhiều mục đích như: bảo vệ khỏi thời tiết, bề mặt thô ráp, đá sắc nhọn, thực vật gây ửng mẩn, côn trùng cắn, bằng cách tạo nên một rào cản giữa da và môi trường."
+                android:textSize="18dp"></TextView>
+         </RelativeLayout>
+
 
       </RelativeLayout>
 

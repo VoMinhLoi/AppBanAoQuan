@@ -52,7 +52,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         else {
             Glide.with(holder.imgPhotoProduct.getContext()).load(product.getUrlImg()).into(holder.imgPhotoProduct);
             holder.tvProductName.setText(product.getProductName());
-            holder.tvProductPrice.setText(formatPrice.format(product.getProductPrice()) + " VNĐ");
+            holder.tvProductPrice.setText("₫ "+formatPrice.format(product.getProductPrice()));
 
             holder.setItemClickListener(new IClickItemProductListener() {
                 @Override

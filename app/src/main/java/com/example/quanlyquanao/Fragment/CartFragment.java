@@ -123,7 +123,7 @@ public class CartFragment extends Fragment {
         rlCartEmpty.setVisibility(View.GONE);
         rlCart.setVisibility(View.VISIBLE);
         String total = format.format(getTotalPrice());
-        tvCartTotalPrice.setText( total +" VNĐ" );
+        tvCartTotalPrice.setText("₫ "+ total);
     }
 
     // set data ProductCartAdapter
@@ -232,7 +232,7 @@ public class CartFragment extends Fragment {
             totalPrice = totalPrice + priceProduct * count;
         }
 
-        tvCartTotalPrice.setText( format.format(totalPrice) + " VNĐ");
+        tvCartTotalPrice.setText("₫ "+format.format(totalPrice));
     }
 
     // Set sô lượng sản phẩm sau nhấn nút tăng giảm

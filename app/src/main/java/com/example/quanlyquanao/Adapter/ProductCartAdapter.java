@@ -52,7 +52,7 @@ public class ProductCartAdapter extends RecyclerView.Adapter<ProductCartAdapter.
         else {
             Glide.with(holder.imgPhotoCart.getContext()).load(product.getUrlImg()).into(holder.imgPhotoCart);
             holder.tvNameProductCart.setText(product.getProductName());
-            holder.tvPriceProductCart.setText( formatPrice.format(product.getProductPrice())+ " VNĐ");
+            holder.tvPriceProductCart.setText("₫ " + formatPrice.format(product.getProductPrice()));
 
             int count = product.getNumProduct();
             if(count != 0){

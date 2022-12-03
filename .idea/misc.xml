@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/DH_Nam3_Ki1/BTnhomcuoiki/AppBanAoQuan/app/src/main/res/layout/activity_login.xml" value="0.17527173913043478" />
+        <entry key="..\:/DH_Nam3_Ki1/BTnhomcuoiki/AppBanAoQuan/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/DH_Nam3_Ki1/BTnhomcuoiki/AppBanAoQuan/app/src/main/res/layout/activity_signup.xml" value="0.25" />
+        <entry key="..\:/DH_Nam3_Ki1/BTnhomcuoiki/AppBanAoQuan/app/src/main/res/layout/fragment_cart.xml" value="0.17527173913043478" />
+        <entry key="..\:/DH_Nam3_Ki1/BTnhomcuoiki/AppBanAoQuan/app/src/main/res/layout/fragment_detail_product.xml" value="0.22826086956521738" />
+        <entry key="..\:/DH_Nam3_Ki1/BTnhomcuoiki/AppBanAoQuan/app/src/main/res/layout/fragment_order_info.xml" value="0.17527173913043478" />
         <entry key="..\:/LANGUAUE/AndroidStudio/AppBanAoQuan/app/src/main/res/drawable/custom_button.xml" value="0.1775" />
         <entry key="..\:/LANGUAUE/AndroidStudio/AppBanAoQuan/app/src/main/res/drawable/custom_edit_text.xml" value="0.1775" />
         <entry key="..\:/LANGUAUE/AndroidStudio/AppBanAoQuan/app/src/main/res/drawable/ic_baseline_account_box_24.xml" value="0.1775" />

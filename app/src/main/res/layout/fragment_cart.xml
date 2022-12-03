@@ -5,9 +5,36 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.CartFragment">
+    <RelativeLayout
+        android:id = "@+id/relativelayout_title_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/img_cart_tittle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/tv_title_cart"
+            android:src="@drawable/ic_baseline_shopping_cart_24"></ImageView>
+        <TextView
+            android:id = "@+id/tv_title_cart"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giỏ Hàng Của Tôi"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily = "sans-serif-condensed-medium">
+
+        </TextView>
+
+    </RelativeLayout>
     <RelativeLayout
         android:id="@+id/rl_cart_empty"
+        android:layout_marginTop = "50dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone">
@@ -16,7 +43,7 @@
             android:id="@+id/img_cart_empty"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/emptycart"
+            android:src="@drawable/empty_cart"
             android:layout_centerHorizontal="true">
         </ImageView>
 
@@ -33,6 +60,7 @@
     </RelativeLayout>
 
     <ScrollView
+        android:layout_marginTop = "50dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -45,9 +73,8 @@
                 android:id="@+id/rcv_cart_product"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp">
-            </androidx.recyclerview.widget.RecyclerView>
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"></androidx.recyclerview.widget.RecyclerView>
 
             <TextView
                 android:id="@+id/tv_cart_total"

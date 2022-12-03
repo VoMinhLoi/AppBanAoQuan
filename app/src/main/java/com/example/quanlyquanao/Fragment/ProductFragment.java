@@ -41,8 +41,6 @@ import me.relex.circleindicator.CircleIndicator;
 
 public class ProductFragment extends Fragment {
 
-    // region Variable
-
     private MainActivity mainActivity;
     private Timer mTimer;
     private List<SlidePhoto> listSlidePhoto;
@@ -72,6 +70,7 @@ public class ProductFragment extends Fragment {
 
         // Set Adapter cho viewPagerSlidePhoto
         setDataSlidePhotoAdapter();
+
         // Set Adapter cho rcvProduct
         setDataProductAdapter();
 
@@ -102,7 +101,6 @@ public class ProductFragment extends Fragment {
         // Auto chuyển các slide photo
         autoSildeImage();
     }
-
 
     // Auto chuyển các slide photo
     private void autoSildeImage(){
@@ -161,7 +159,6 @@ public class ProductFragment extends Fragment {
             }
         });
     }
-
     // Lấy Product để vào slide
     private List<SlidePhoto> getListSlidePhoto(){
         List<SlidePhoto> listSlidePhoto = new ArrayList<>();
